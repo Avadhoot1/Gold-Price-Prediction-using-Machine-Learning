@@ -56,6 +56,33 @@ scikit-learn — machine learning algorithms & tools
 
 random forest — prediction model
 
+## ⚡ Challenges Faced & Solutions
+
+1. Data Quality & Preprocessing
+
+    Challenge: Dataset contained irrelevant columns (e.g., Currency) and unformatted date fields.
+
+    Solution: Cleaned dataset by removing redundant features, converting Date to a time-series index, and ensuring consistent formatting.
+
+2. Model Selection
+
+    Challenge: Linear regression models underperformed due to the non-linear nature of gold prices.
+
+    Solution: Chose Random Forest Regressor, which handled non-linearity effectively and provided stable short-term predictions.
+
+3. Performance Evaluation
+
+    Challenge: Regression tasks don’t provide a direct “accuracy %”.
+
+    Solution: Evaluated using MAE, RMSE, R², and MAPE, then expressed results as an accuracy percentage (100 – MAPE) for interpretability.
+
+4. Validation & Visualization
+
+    Challenge: Numerical results alone weren’t sufficient to judge prediction reliability.
+
+    Solution: Created plots comparing actual vs. predicted prices, making model performance easy to interpret for end-users and investors.
+  
+
 ## 🤖 Why Random Forest?
 
 Handles non-linear relationships in financial data
@@ -81,6 +108,7 @@ Different algorithms were tested to evaluate performance:
 
 👉 Final choice: Random Forest since it balances accuracy, stability, and interpretability better than other models.
 
+
 ## 🚀 How to Run
 
 1️⃣ Clone this repository or download the code.
@@ -98,7 +126,7 @@ pip install numpy pandas matplotlib seaborn scikit-learn xgboost
 4️⃣ Run the notebook/script to train and test the model
 
 
-📌 Insights
+## 📌 Insights
 
 Discovered trends and correlations in gold price data
 
@@ -109,7 +137,7 @@ Built a Random Forest model with ~98% prediction accuracy
 Visualized actual vs predicted values for easy interpretation
 
 
-👤 Author
+## 👤 Author
 
 Avadhoot Wamane
 
