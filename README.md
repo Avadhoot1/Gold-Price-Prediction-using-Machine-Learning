@@ -46,6 +46,21 @@ It provides feature importance scores, helping to understand which factors most 
 
 It works well with both small and large datasets, and can capture complex interactions in the data.
 
+⚖️ Algorithm Comparison
+
+Different algorithms were tested to evaluate performance:
+
+
+| Algorithm             | Strengths                                               | Weaknesses                          | Expected Performance on Dataset     |
+| --------------------- | ------------------------------------------------------- | ----------------------------------- | ----------------------------------- |
+| **Linear Regression** | Simple, interpretable                                   | Cannot model non-linear trends      | Moderate (R² \~ 0.85)               |
+| **Ridge / Lasso**     | Handles multicollinearity, Lasso does feature selection | Still linear, may underfit          | Similar to Linear (R² \~ 0.85–0.88) |
+| **Decision Tree**     | Captures non-linear patterns, interpretable rules       | Prone to overfitting                | Better (\~0.90 R²), but unstable    |
+| **Random Forest**     | Robust, reduces overfitting, high accuracy              | Slower training, less interpretable | Best (\~0.95–0.97 R²)               |
+
+
+👉 Final choice: Random Forest since it balances accuracy, stability, and interpretability better than other models.
+
 🚀 How to Run
 
 1️⃣ Clone this repository or download the code.
