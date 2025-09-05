@@ -1,6 +1,16 @@
 # Gold-Price-Prediction-using-Machine-Learning
 This project uses Python and machine learning to predict gold prices based on historical data. The goal is to build a predictive model that can help investors and analysts understand the factors influencing gold prices and forecast future trends.
 
+Designed and implemented a predictive model for gold prices using historical financial indicators (SPX, Oil, Silver, EUR/USD).
+
+Conducted EDA, feature engineering, and preprocessing to uncover market patterns and correlations.
+
+Evaluated multiple ML algorithms; Random Forest Regressor delivered the best performance (R² ≈ 0.97).
+
+Visualized feature importance and trends with Matplotlib & Seaborn, providing insights into key market drivers.
+
+Tech Stack: Python, Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib, XGBoost.
+
 
 📊 Features
 
